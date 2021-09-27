@@ -45,6 +45,7 @@
         android:id="@+id/stopButton"
         android:layout_width="450px"
         android:layout_height="wrap_content"
+        android:onClick="stopService"
         android:text="@string/stop_service"
         android:backgroundTint="@android:color/holo_red_dark"
         app:layout_constraintBottom_toBottomOf="parent"

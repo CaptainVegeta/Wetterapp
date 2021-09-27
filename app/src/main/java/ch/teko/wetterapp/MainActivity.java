@@ -66,6 +66,11 @@ public class MainActivity extends AppCompatActivity {
         makeHTTPRequest(url, Request.Method.GET);
     }
 
+    public void stopService(View view) {
+        TextView status = findViewById(R.id.status);
+        status.setText("SERVICE STOPPED!");
+    }
+
     public void compare(){
         try {
             String resultJSON = getIntent().getStringExtra("resultJSON");
